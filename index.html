@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+<title>Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+    <article class="form">
+      <h1>Registration form!</h1> 
+    </article>
+     <div class="container">
+      <form action="https://formspree.io/f/mayveqlp" method="POST" id="my-form">
+        <form action="https://formsubmit.co/your@email.com" method="POST" />
+  
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" placeholder="Enter your name" id="firstName" name="First Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="Last Name" placeholder="Enter your last name" id="Last Name" name="Last Name" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="Date">Date of birth</label>
+          <input name="Date" placeholder="Enter your date of birth (day, month, year) "  id="Date" required></input>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input name="text"  placeholder="Enter your Phone number (+373)" id="phone" cols="5" rows="5" required></input>
+        </div>
+
+
+       <div class="form-group">
+          <label for="phone">SDL</label>
+          <input name="SDL"  placeholder="SDL permissions" id="sdl" required></input>
+        </div>
+         
+        <div class="checkbox-container">
+          <input type="checkbox" id="cb3">
+          <label  type="text"  id="checkbox" name="2 year experience" for="cb3">2 year experience</label>
+          <input class="answer" name="2 year experience"  placeholder="Yes/No" id="answer" required></input>
+        </div>
+
+        <div class="cont">  
+          <button class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+          </div>
+      </form>
+    </div>
+    <div id="status"></div>
+    <div class="loader">
+      <span class="loader__element"></span>
+      <span class="loader__element"></span>
+      <span class="loader__element"></span>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+</script>
+</body>
+</html>
